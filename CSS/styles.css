@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*To Do next: 
+fix nav responsiveness
+add media screen to CSS file
+fix for different dimensions
+check dimensions with inspect
+possibly burger menu
+only have to make a couple not all*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgba(26, 26, 29, 1);
+    color: white; 
+    font-family: 'Roboto';
+    letter-spacing:1.5px;
+
+
+}
+
+/* ramdenime ganmeorebiti elementi mkonda (font family, letter spacing)*/
+/*body shi gadavitane.*/
+
+header{
+    display: flex;
+    width: auto;
+    height:auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(to right, rgb(13, 15, 27), rgb(17, 19, 36));
+    border: 0.1px solid rgba(52, 104, 193, 0.7);
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    font-size:24px;
+}
+
+nav a{
+    justify-content: flex-end;
+    font-size:12px;
+    color: rgba(198, 198, 198, 1); 
+    padding: 1rem 0.5rem;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+   
+    
+}
+.logo {
+  width: 70px;        
+  height: auto;       
+  object-fit: contain;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.home img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter: blur(2px);
+  opacity: 40%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: left;                
+  width: 90%;                       
+}
+
+h1 {
+    font-size: 48px; 
+    font-weight: 700;
+
+}
+
+h2 {
+    font-size:32px;
+    font-weight: lighter;
+}
+
+
+                                          
