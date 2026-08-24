@@ -1,24 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/*notes
-another section with img side p
-text fluidity
-what we offer
-reviews
-add FAQ
-CTA maybee
-*/
+
 body {
-    margin: 0;
-    padding: 0;
     background-color:rgb(15, 15, 16);
     color: white; 
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     letter-spacing:1.5px;
 
 }
@@ -48,7 +39,6 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    justify-content: flex-end;
     font-size:12px;
     color: rgba(198, 198, 198, 1); 
     padding: 1rem 0.5rem;
@@ -95,7 +85,7 @@ nav a{
   transform: translateY(-50%);
   text-align: left;            
   width: 100%;   
-  padding: 2em;       
+  padding: 0 40px;    
 }
 
 .home-banner {
@@ -121,6 +111,7 @@ h2 {
 h3 {
   font-size: 28px;
   letter-spacing: 3px;
+}
 .highlight {
   font-weight: bold;
   color:rgb(255, 245, 210);
@@ -128,45 +119,69 @@ h3 {
 .regular {
   font-weight:200;
 }
+
+/*destionations section*/
+section{
+  margin-top:2em;
 }
-/*destionations section(WIP)*/
+
 section h2 {
   font-size: 40px;
   font-weight: bold;
   margin-top: 0;
-  padding: 1.5em 1em 0.3em;
+  padding: 1.5em 40px 0.5em;
 }
 
 section h3{
   font-size: 20px;
   font-weight: 400;
   padding: 0em 2em;
+  margin: 0;
   color:rgb(255, 245, 210);
 
 }
 
-hr{
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 15px;
+section .align-text{
+  display: flex;
+  justify-content: space-between; 
+  align-items: baseline;
+}
+
+.destinations-link{
+  color:white;
+  font-size:20px;
+  text-align: end;
+  padding-right: 40px;
+  margin:0;
+  text-decoration: none;
 }
 
 .destinations-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  padding: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px
 }
 
 .destinations-grid img {
+  margin-top: 5px;
   width: 100%;
   height: 450px;
   object-fit: cover;
   border-radius: 10px;
-}
-/*destionations section(WIP)*/
 
-/*------------------------------*/
+}
+
+hr{
+  display: none;
+  border-top: 0.3px solid white;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+
+/*dimensions*/
  @media (max-width: 768px) {
   header {
     position: relative;
@@ -225,23 +240,32 @@ hr{
   h3{
     font-size:16px;
   }
-
+  
+  
   section h2{
     font-size:24px;
-    padding: 30px 20px 0px;
+    padding: 30px 30px 0px;
   }
 
   section h3{
     font-size:12px;
-    padding: 1px 20px;
-    letter-spacing: 0.5;
+    padding: 1px 30px;
+    letter-spacing: 0.5px;
   }
 
+  .destinations-link{
+    display:none;
+    font-size:12px;
+    letter-spacing: 0.5px;
+  }
+  .destinations-grid{
+    padding-right:50px;
+  }
   .destinations-grid img{
     max-height: 300px;
   }
 }
-/*------------------------------*/
+
   @media (max-width: 480px)  {
       .destinations-grid {
     grid-template-columns: repeat(1, 1fr); }
@@ -250,7 +274,6 @@ hr{
       font-size: 12px;
     }
   }
-/*------------------------------*/
 
 
 
