@@ -128,8 +128,11 @@ section{
 section h2 {
   font-size: 40px;
   font-weight: bold;
+  font-family:'Roboto Slab';
   margin-top: 0;
   padding: 1.5em 40px 0.5em;
+  letter-spacing: 3px;
+  
 }
 
 section h3{
@@ -172,7 +175,7 @@ section .align-text{
 
 }
 
-hr{
+hr {
   display: none;
   border-top: 0.3px solid white;
   margin-left: 40px;
@@ -180,7 +183,53 @@ hr{
   margin-top: 15px;
 }
 
+/*trip section
+.trip-container {
+  display: flex;
+}
 
+.tripimg {
+  margin: 40px;
+  width: 600px;
+  height:400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+section p {
+  margin: 40px;
+  font-size: 22px;
+  font-weight: 300;
+}
+*/
+
+/*animations section*/
+.animate-up {
+  opacity: 0;
+  animation: slideup 1.5s ease forwards;
+}
+
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hover-animation{
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  opacity: 1;
+}
+
+.hover-animation:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  opacity: 0.60;
+}
 /*dimensions*/
  @media (max-width: 768px) {
   header {
@@ -240,8 +289,8 @@ hr{
   h3{
     font-size:16px;
   }
-  
-  
+
+  /*destinations section*/
   section h2{
     font-size:24px;
     padding: 30px 30px 0px;
@@ -264,18 +313,38 @@ hr{
   .destinations-grid img{
     max-height: 300px;
   }
+  /*trip section
+  .trip-container {
+  display: flex;
+
+  }
+  .tripimg {
+  width: 420px;
+  height: 300px;
+  }
+  
+  section p {
+    display: none;
+  }
+*/
 }
 
-  @media (max-width: 480px)  {
-      .destinations-grid {
-    grid-template-columns: repeat(1, 1fr); }
+ @media (max-width: 480px) {
+  .destinations-grid {
+  grid-template-columns: repeat(1, 1fr); }
 
-    h3{
-      font-size: 12px;
-    }
+  h3{
+    font-size: 12px;
+  }
+/*
+  section p {
+    display: none;
   }
 
+  .tripimg {
+  max-width: 300px;
+  height: 300px;
+  }
+*/
 
-
-
-                                          
+}
