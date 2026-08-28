@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('truetype-variations');
+  font-weight: 100 700;
+  font-style:normal;
+  font-display: swap; 
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box;
@@ -23,7 +36,7 @@ header{
     padding: 0.5rem 1rem;
     background-image: linear-gradient(to right, 
     rgb(13, 15, 27), rgb(17, 19, 36));
-    border: 0.1px solid rgba(52, 104, 193, 0.7);
+    border: 0.5px solid rgba(52, 104, 193, 0.7);
     font-family: 'Roboto Slab';
     font-weight: 500;
     font-size:24px;
@@ -94,8 +107,8 @@ nav a{
   align-items:center;
   background-image: linear-gradient(to right,
   rgb(13, 15, 27), rgb(17, 19, 36));
-  border: 0.1px solid rgba(52, 104, 193, 0.7);
-  padding: 20px;
+  border: 0.5px solid rgba(52, 104, 193, 0.7);
+  padding: 40px;
 }
 
 h1 {
@@ -114,7 +127,7 @@ h3 {
 }
 .highlight {
   font-weight: bold;
-  color:rgb(255, 245, 210);
+  color: rgb(161, 182, 218);
 }
 .regular {
   font-weight:200;
@@ -150,15 +163,6 @@ section .align-text{
   align-items: baseline;
 }
 
-.destinations-link{
-  color:white;
-  font-size:20px;
-  text-align: end;
-  padding-right: 40px;
-  margin:0;
-  text-decoration: none;
-}
-
 .destinations-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -175,16 +179,26 @@ section .align-text{
 
 }
 
+.card-item {
+  position: relative; 
+  overflow: hidden;  
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;      
+  left: 20px;       
+  font-size: 24px;
+  font-weight: 500;
+}
 hr {
   display: none;
   border-top: 0.3px solid white;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 15px;
+  margin: 15px 40px 0;
 }
 
-/*trip section
-.trip-container {
+/*trip section*/
+.trip-section {
   display: flex;
 }
 
@@ -197,11 +211,216 @@ hr {
 }
 
 section p {
-  margin: 40px;
-  font-size: 22px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left:auto;
+  
+}
+
+.trip-p{
+  margin:30px 10px;
+}
+/*what we offer section*/
+.wwf {
+  background-color: rgba(23, 24, 51, 1);
+  padding: 20px 0;
+}
+
+.wwf-title {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.wwf-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 40px auto;
+}
+
+.wwf-icons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 12px;
+}
+
+.wwf-icons img {
+  width: 120px;        
+  height: auto;  
+  margin-left: 10px;
+  margin-right: 10px;     
+  object-fit: contain;
+}
+
+.wwf-item {
+  display: flex;
+  align-items: center; 
+}
+
+.wwf-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.wwf h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: bolder; 
+  color: white;
+}
+
+.wwf p {
+  font-size: 16px;
+  color: rgb(161, 182, 218);
+  margin: 0.2em 40px;
+  padding:0; 
+
+}
+
+.wwf-img {
+  flex: 1;  
+  display: flex;
+  justify-content: flex-end; 
+  padding-right: 40px;
+}
+
+.wwf-img img {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;     
+  object-fit: cover;
+}
+/*reviews section*/
+.reviews-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px;
+  gap: 20px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  width:100%;
+  height:370px;
+  background-color: rgba(62, 62, 62, 0.426);
+  padding: 20px;
+  font-family:'Roboto Slab';
+  font-size:18px;
+  font-weight:bold;
+  border-radius: 10px;
+}
+
+.review-card p{
+  font-size:12px;
+  font-weight:200px;
+  font-family: 'Roboto';
+  margin:0;
+  padding: 30px 0 0 0;
+  color: rgba(255, 255, 255, 0.838)
+}
+
+.date {
+  margin-top: auto;
+}
+
+.name-stars {
+  font-size:16px;
+  margin-top:20px;
+  font-family:'Roboto';
   font-weight: 300;
 }
-*/
+
+.stars {
+  color: rgba(255, 206, 73, 0.838);
+}
+
+/*footer*/
+.footer {
+  background-color: rgba(23, 24, 51, 1);
+  min-height: 320spx;
+  padding: 30px 20px;
+  margin-top: 100px;
+
+}
+
+.content {
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: 2px; 
+}
+
+.footer h4{
+  font-family:'Roboto Slab';
+  font-size:20px;
+}
+.footer-brand p {
+  color: rgb(161, 182, 218);
+  padding-left:20px;
+  font-size:16px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  gap: 30px;
+  padding: 30px;
+  margin:0;
+  
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer-links a {
+  color: rgb(161, 182, 218);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.wrapper{
+  padding-top: 10px;
+}
+.socials-container {
+  display: flex;
+  gap: 10px; 
+  padding: 20px;
+}
+.socials {
+  display:inline-block;
+  width: 30px;
+  height: 30px; 
+
+}
 
 /*animations section*/
 .animate-up {
@@ -228,7 +447,7 @@ section p {
 .hover-animation:hover{
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  opacity: 0.60;
+  opacity: 0.40;
 }
 /*dimensions*/
  @media (max-width: 768px) {
@@ -313,20 +532,22 @@ section p {
   .destinations-grid img{
     max-height: 300px;
   }
-  /*trip section
-  .trip-container {
-  display: flex;
+
+  /*trip section*/
+  .trip-section {
+    display: flex;
+    flex-direction: column;
 
   }
   .tripimg {
-  width: 420px;
-  height: 300px;
+    width: 420px;
+    height: 300px;
   }
   
   section p {
     display: none;
   }
-*/
+
 }
 
  @media (max-width: 480px) {
@@ -336,15 +557,14 @@ section p {
   h3{
     font-size: 12px;
   }
-/*
+
   section p {
     display: none;
   }
 
   .tripimg {
-  max-width: 300px;
-  height: 300px;
+    max-width: 300px;
+    height: 300px;
   }
-*/
 
 }
