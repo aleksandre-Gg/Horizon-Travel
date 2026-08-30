@@ -1,2 +1,4 @@
 # Horizon-Travel
-Travel agency website i'm working on. putting here for backup, planning to add JS soon.
+This repository contains local static files for a fictional travel agency website.
+It is a personal portfolio project created for educational purposes only.
+All addresses, contact details, and services listed in the code are entirely fictional.

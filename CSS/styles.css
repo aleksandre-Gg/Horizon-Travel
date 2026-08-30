@@ -216,6 +216,7 @@ section p {
   font-weight: 300;
   margin-left:auto;
   
+  
 }
 
 .trip-p{
@@ -455,7 +456,7 @@ section p {
     position: relative;
     font-size: 16px;
   }
-
+  
   .menu {
     display: block;
     background-color: transparent;
@@ -497,10 +498,7 @@ section p {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  h1 {
-    font-size:32px;
-
-  }
+  
   h2 {
     font-size: 24px;
   }
@@ -530,23 +528,132 @@ section p {
     padding-right:50px;
   }
   .destinations-grid img{
-    max-height: 300px;
+    max-height: 250px;
   }
-
+  .card-text{
+    font-size:16px;
+  }
   /*trip section*/
+
+  /*TO FIX!!*/
   .trip-section {
     display: flex;
     flex-direction: column;
+    width:100%;
+    box-sizing: border-box; 
+    align-items: center;
 
   }
   .tripimg {
-    width: 420px;
-    height: 300px;
+    width: 100%;       
+    max-width: 580px; 
+    height: auto;  
+    min-height: 200px;
+    max-height: 300px;
+    padding: 0;
+
+  }
+  section p {
+    margin: 0 10px;
+    display:block;
+    font-size:12px;
   }
   
-  section p {
-    display: none;
-  }
+
+/*TO FIX!!*/
+
+/*  
+  .wwf {
+  padding: 20px 0;  
+}
+
+.wwf-title {
+  font-size:24px;
+}
+
+.wwf-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 40px auto;
+}
+
+.wwf-icons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 12px;
+}
+
+.wwf-icons img {
+  width: 120px;        
+  height: auto;  
+  margin-left: 10px;
+  margin-right: 10px;     
+  object-fit: contain;
+}
+
+.wwf-item {
+  display: flex;
+  align-items: center; 
+}
+
+.wwf-text {
+  display: flex;
+  font-size:16px;
+  flex-direction: column;
+  text-align: left;
+}
+
+.wwf h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  font-weight: bolder; 
+  color: white;
+}
+
+.wwf p {
+  font-size: 12px;
+  color: rgb(161, 182, 218);
+  padding:0; 
+
+}
+
+.wwf-img {
+  flex: 1;  
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.wwf-img img {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;     
+  object-fit: cover;
+}
+*/
+
+/*footer*/
+.footer{
+  font-size:10px;
+}
+.footer-brand p {
+  font-size:12px;
+}
+.footer h4{
+  font-size:16px;
+}
+
+.socials{
+   width:20px;
+  height: 20px;
+}
+
+.review-card p{
+  display:none; /*TO FIX!!*/
+}
 
 }
 
