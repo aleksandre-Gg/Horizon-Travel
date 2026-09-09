@@ -24,7 +24,6 @@ body {
   color: white; 
   font-family: 'Roboto', sans-serif;
   letter-spacing:1.5px;
-
 }
 
 header {
@@ -34,13 +33,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
-  background-image: linear-gradient(to right, 
-  rgb(13, 15, 27), rgb(17, 19, 36));
-  border: 0.5px solid rgba(52, 104, 193, 0.7);
+  background-color: rgba(23, 24, 51, 1);
   font-family: 'Roboto Slab';
   font-weight: 500;
   font-size:24px;
-
 }
 
 nav ul {
@@ -52,23 +48,23 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  font-size:14px;
+  font-size:16px;
   color: rgba(198, 198, 198, 1); 
   padding: 0 1rem;
+  margin:0;
 }
 
-nav a:hover{
+nav a:hover {
   color:white;
 }
 
 .brand-container {
   display: flex;
-  align-items: center;
-   
-    
+  align-items: center;  
 }
+
 .logo {
-  width: 30px;        
+  width: 35px;        
   height: auto;       
   object-fit: contain;
   margin:15px;
@@ -83,7 +79,6 @@ nav a:hover{
   background-color: rgba(23, 24, 51, 1);
   min-height: 320px;
   padding: 30px 20px;
-  margin-top: 100px;
 }
 
 .content {
@@ -106,12 +101,13 @@ nav a:hover{
   display: flex;
   align-items: center;
   gap: 2px; 
-}
+} 
 
-.footer h4{
+.footer h4 {
   font-family:'Roboto Slab';
   font-size:20px;
 }
+
 .footer-brand p {
   color: rgb(161, 182, 218);
   padding-left:20px;
@@ -143,7 +139,7 @@ nav a:hover{
   color: white;
 }
 
-.wrapper{
+.wrapper {
   padding-top: 10px;
 }
 
@@ -207,6 +203,7 @@ nav a:hover{
   }
 
   .logo {
+    width:30px;
     height:auto;
   }
 
