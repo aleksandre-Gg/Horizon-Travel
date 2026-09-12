@@ -47,6 +47,7 @@ header {
 nav ul {
   display: flex;
   list-style: none;
+  gap:1rem;
 }
 
 nav a {
@@ -107,7 +108,7 @@ nav a:hover {
   gap:1rem; 
 } 
 
-.brand-header img {
+.brand-header img{
   width:30px;
   height:auto;
 }
@@ -131,6 +132,7 @@ nav a:hover {
   gap: 50px;
   padding: 30px;
   margin:0;
+  
 }
 
 .footer-links div {
@@ -249,4 +251,5 @@ nav a:hover {
   .footer-brand p{
     font-size:12px;
   }
+
 }

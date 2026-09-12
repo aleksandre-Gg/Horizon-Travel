@@ -8,6 +8,7 @@
   margin:4em;
   padding:3em;
   gap:5rem;
+  min-height: clamp(768px, 80vh, 950px);
 }
 
 /*left side*/
@@ -74,6 +75,7 @@ textarea {
   border-radius: 50px;
   color:white;
   font-weight:bold;
+
   font-size:20px;
   width: 250px;
   height: 50px;
@@ -148,6 +150,7 @@ textarea {
 .icon-items {
   display: contents;
 }
+
 /*dimensions*/
  @media (max-width: 768px) {
   .main-container {
