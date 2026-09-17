@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horizon Travel</title>
+  <title>Contact us - Horizon Travel</title>
   <script src="JS/script.js" defer></script>
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/contact.css">
-  <link rel="icon" href="icons/horizon-logo.png">
+  <link rel="icon" href="icons/horizon-logo.svg">
 </head>
 <body> 
  <header>
     <div class="brand-container">
     <a href="index.html">
-    <img src="icons/horizon-logo.png" alt="Logo" class="logo"></a>
+    <img src="icons/horizon-logo.svg" alt="Logo" class="logo"></a>
     <a href="index.html" class="site-title">Horizon Travel</a>
     </div>
-  <button class="menu">☰</button>
-    <nav>
+  <button class="menu" aria-label="Open navigation menu">☰</button>
+    <nav aria-label="Main navigation">
       <div class="colorB">
-      <button class="close">&times;</button>
+      <button class="close" aria-label="Close navigation menu">&times;</button>
      </div>
         <ul>
-          <li><a href="tours.html">Tours</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
           <li><a href="FAQ.html">FAQs</a></li>
        </ul>
     </nav>
@@ -37,46 +37,77 @@
         <p>have any questions about your next trip?</p>
         <p>We're here to help.</p>
       </div>
+  <form action="#" method="post">
     <div class="box-container">
-        <p>*First name</p>
-        <input type="text" name="firstname" placeholder="Enter your first name">
-        <p>*Last name</p>
-        <input type="text" name="lastname" placeholder="Enter your last name">
-        <p>*Email</p>
-        <input type="text" name="email" placeholder="Enter your email">
-        <p>Write to us</p>
-        <textarea name="message" placeholder="Enter your message"></textarea>
+        <!--first input-->
+        <label for="first-name"><span aria-hidden="true">*</span>First name</label>
+        <input 
+          type="text" 
+          id="first-name" 
+          name="firstname" 
+          placeholder="Enter your first name"
+          autocomplete="given-name"
+          required
+          aria-required="true">
+        <!--second input-->
+        <label for="last-name"><span aria-hidden="true">*</span>Last name</label>
+        <input 
+          type="text" 
+          id ="last-name" 
+          name="lastname" 
+          placeholder="Enter your last name"
+          autocomplete="family-name"
+          required
+          aria-required="true">
+        <!--third input-->
+        <label for="email"><span aria-hidden="true">*</span>Email</label>
+        <input 
+          type="email" 
+          id ="email" 
+          name="email" 
+          placeholder="Enter your email"
+          autocomplete="email"
+          required
+          aria-required="true">
+        <!--textarea-->
+        <label for="write-to-us">Write to us</label>
+        <textarea 
+          id="write-to-us" 
+          name="write-to-us" 
+          placeholder="Enter your message"></textarea>
       </div>
     <div class="button-div">
-        <button class="submit-btn">Submit</button>
-    </div>
-    </div>
+      <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </div>
     <!--right side-->
     <div class="right-side">
     <div class="icons">
       <div class="icon-items">
-     <img src="icons/phone.png" alt="phone"> 
+     <img src="icons/phone.svg" alt="" aria-hidden="true"> 
      <div class="info-text">
        <h3>Phone</h3>
-       <p>+1 (555) 000-0000</p>
+       <p><a href="tel:+15550000000">+1 (555) 000-0000</a></p>
        </div>
     </div>
       <div class="icon-items">
-     <img src="icons/email.png" alt="email">
+     <img src="icons/email.svg" alt="" aria-hidden="true">
      <div class="info-text">
        <h3>Email</h3>
-       <p>contact@horizontravel.example</p>
+       <p><a href="mailto:contact@horizontravel.example">
+          contact@horizontravel.example</a></p>
        </div>
     </div>
       <div class="icon-items">
-     <img src="icons/hours.png" alt="hours">
+     <img src="icons/hours.svg" alt="" aria-hidden="true">
      <div class="info-text">
        <h3>Working Hours</h3>
        <p>Mon - Fri: 9am - 7pm</p>
        </div>
     </div>
       <div class="icon-items">
-     <img src="icons/address.png" alt="address">   
+     <img src="icons/address.svg" alt="" aria-hidden="true">   
      <div class="info-text">
        <h3>Address</h3>
        <p>482 Main street</p>
@@ -87,26 +118,24 @@
    <div class="map-container">
     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375244.53693035856!2d-104.99978533559393!3d38.909212314679586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8713412ea1e6d22b%3A0x418eeb92f5e86b13!2sColorado%20Springs%2C%20CO%2C%20USA!5e0!3m2!1sen!2sge!4v1788014980848!5m2!1sen!2sge" 
-      allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+      title="Map displaying the location of the office" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
     </iframe>
     </div>
    </div>
  </div>
-</div>
-</div>
 <!--footer-->
 <footer class="footer">
   <div class="content">
     <div class="footer-brand">
       <div class="brand-header">
-        <img src="icons/horizon-logo.png" alt="Logo" class="logo">
+        <img src="icons/horizon-logo.svg" alt="Logo" class="logo">
         <h4>Horizon Travel</h4>
       </div>
       <p>©2026 Horizon Travel. All rights reserved.</p>
     <div class="socials-container">
-        <img src="icons/instagram.png" alt="instagram" class="socials">
-        <img src="icons/linkedin.png" alt="linkedin" class="socials">
-        <img src="icons/x.png" alt="twitter" class="socials">
+        <img src="icons/instagram.svg" alt="instagram" class="socials">
+        <img src="icons/linkedin.svg" alt="linkedin" class="socials">
+        <img src="icons/x.svg" alt="twitter" class="socials">
     </div>
   </div>
     <ul class="footer-links">
@@ -123,7 +152,7 @@
     <div class="company">
     <h4>Company</h4>
     <div class="wrapper">
-     <li><a href="FAQ.html">FAQs</a></li>
+     <li><a href="#FAQ">FAQs</a></li>
      <li><a href="contact.html">Contact</a></li>
      <li><a href="about.html">About</a></li>
     </div>

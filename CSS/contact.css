@@ -34,12 +34,16 @@
   padding:15px 0;
 }
 
-.box-container p {
-  font-size: 20px;
+label {
+  font-size: 1.25rem;
   font-weight:bolder;
 }
 
-input[type="text"] {
+label span{
+  color:rgb(225, 29, 72);
+}
+
+input[type="text"], [type="email"] {
   display: grid;
   width: 100%;
   height:auto;
@@ -48,7 +52,7 @@ input[type="text"] {
   margin:30px 0;
   padding:25px;       
   border-radius: 10px;              
-  font-size: 16px;
+  font-size: 1rem;
   color:white;
 } 
 
@@ -57,12 +61,12 @@ textarea {
   height: 200px;
   font-family: 'Roboto';
   background-color: transparent;
-  color:black;
+  color:white;
   border: 1.5px solid rgba(255, 255, 255, 0.365);  
   margin:30px 0;
   padding:25px;       
   border-radius: 10px;              
-  font-size: 16px; 
+  font-size: 1rem; 
 }
 
 .button-div {
@@ -120,12 +124,13 @@ textarea {
   padding-bottom:5px;
 }
 
-.info-text p {
+.info-text p , a{
   overflow-wrap: break-word;
   word-break: break-word;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.8);
   padding-bottom:5px;
+  text-decoration: none;
 }
 
 .map-container {

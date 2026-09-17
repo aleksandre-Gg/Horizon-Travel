@@ -36,6 +36,7 @@ header {
   background-color: rgba(23, 24, 51, 1);
   font-family: 'Roboto Slab';
   font-weight: 500;
+  white-space: nowrap;
 
 }
 
@@ -46,16 +47,18 @@ header {
 }
 
 nav ul {
+  font-weight: bold;
   display: flex;
   list-style: none;
   gap:1rem;
+  white-space: nowrap;
 }
 
 nav a {
   text-decoration: none;
-  font-size:16px;
+  font-size:1rem;
   color: rgba(198, 198, 198, 1); 
-  padding:0 1rem;
+  padding: 0 1rem;
 }
 
 nav a:hover {
