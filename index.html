@@ -13,13 +13,13 @@
  <header>
     <div class="brand-container">
     <a href="index.html">
-    <img src="icons/horizon-logo.svg" alt="Logo" class="logo"></a>
+    <img src="icons/horizon-logo.svg" alt="Horizon logo" class="logo"></a>
     <a href="index.html" class="site-title">Horizon Travel</a>
     </div>
-  <button class="menu">☰</button>
+  <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav>
-     <div class="colorB">
-      <button class="close">&times;</button>
+      <div class="colorB">
+      <button class="close" aria-label="Close menu">&times;</button>
      </div>
         <ul>
           <li><a href="destinations.html">Destinations</a></li>
@@ -51,28 +51,28 @@
       <img src="images/prague.webp" alt="Prague">
       <div class="card-text">
         <h4>Prague</h4>
-        <a href="#">Learn more ➔</a>
+        <a href="#" aria-label="Learn more about Prague">Learn more ➔</a>
       </div>
     </div>
       <div class="card-item">
       <img src="images/rome.webp" alt="Rome">
       <div class="card-text">
         <h4>Rome</h4>
-        <a href="#">Learn more ➔</a>
+        <a href="#" aria-label="Learn more about Rome">Learn more ➔</a>
       </div>
     </div>
       <div class="card-item">
       <img src="images/tokyo.webp" alt="Tokyo"> 
       <div class="card-text">
         <h4>Tokyo</h4>
-        <a href="#">Learn more ➔</a>
+        <a href="#" aria-label="Learn more about Tokyo">Learn more ➔</a>
       </div>
     </div>
       <div class="card-item">
       <img src="images/melbourne.webp" alt="Melbourne">
       <div class="card-text">
         <h4>Melbourne</h4>
-        <a href="#">Learn more ➔</a>
+        <a href="#" aria-label="Learn more about Melbourne">Learn more ➔</a>
       </div>
     </div>
   </div>
@@ -131,6 +131,7 @@
       <div class="wwf-img">
         <img src="images/bus-wwf.webp" alt="People on a bus tour">
       </div>
+    </div>
   </section>
   <!--reviews section-->
   <section>
@@ -142,7 +143,7 @@
         <h4>"best decision"</h4>
         <div class="name-stars">
           <span class="author">Sarah H.</span>
-          <span class="stars">★★★★★</span>
+          <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
         </div>
         <p>Choosing to plan our honeymoon with Horizon Travel turned out to be 
           one of the best decisions that we made throughout the entire trip.</p>
@@ -156,7 +157,7 @@
         <h4>"transformed our visit"</h4>
         <div class="name-stars">
           <span class="author">Théo B.</span>
-          <span class="stars">★★★★</span>
+          <span class="stars" aria-label="4 out of 5 stars">★★★★</span>
         </div>
         <p>Our guide in Prague literally transformed our visit to the city. 
            He knew which streets to stroll at evening light and which cafes locals frequented.</p>
@@ -170,7 +171,7 @@
         <h4>"no additional charges"</h4>
         <div class="name-stars">
           <span class="author">Amara K.</span>
-          <span class="stars">★★★★</span>
+          <span class="stars" aria-label="4 out of 5 stars">★★★★</span>
         </div>
         <p>My connecting flight was cancelled with little warning. 
           I panicked slightly and contacted their support team.</p>
@@ -185,7 +186,7 @@
         <h4>"travel simple"</h4>
         <div class="name-stars">
           <span class="author">Callum R.</span>
-          <span class="stars">★★★★★</span>
+          <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
         </div> 
         <p>Had a group of 12 people that needed to travel, which is usually a pain to plan for 
           but Horizon took care of the bus transfers without a hitch.</p>
@@ -215,35 +216,32 @@
         <img src="icons/x.svg" alt="twitter" class="socials">
     </div>
   </div>
-    <ul class="footer-links">
-  <!--Legal-->    
-    <div class="Legal">
+<div class="footer-links">
+  <!--footer links-->    
+  <div class="Legal">
     <h4>Legal</h4>
-    <div class="wrapper">
-     <li><a href="#privacy">Privacy Policy</a></li>
-     <li><a href="#termsofservice">Terms of Service</a></li>
-     <li><a href="#cookie">Cookie Settings</a></li>
-    </div>
-    </div>
-  <!--company-->
-    <div class="company">
-    <h4>Company</h4>
-    <div class="wrapper">   
-     <li><a href="FAQ.html">FAQs</a></li>
-     <li><a href="contact.html">Contact</a></li>
-     <li><a href="about.html">About</a></li>
-    </div>
-    </div>
-  <!--resources-->
-    <div class="Resources">
-    <h4>Resources</h4>
-    <div class="wrapper">
-     <li><a href="#help">Help Center</a></li>
-     <li><a href="#pricing">Pricing</a></li>
-     <li><a href="tours.html">Tour Guides</a></li>
-    </div>
-    </div>
+    <ul class="wrapper">
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#termsofservice">Terms of Service</a></li>
+      <li><a href="#cookie">Cookie Settings</a></li>
     </ul>
+  </div>
+  <div class="company">
+    <h4>Company</h4>
+    <ul class="wrapper">
+      <li><a href="FAQ.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+  <div class="Resources">
+    <h4>Resources</h4>
+    <ul class="wrapper">
+      <li><a href="#help">Help Center</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="destinations.html">Tour Guides</a></li>
+    </ul>
+  </div>
   </div>
  </div>
 </footer>

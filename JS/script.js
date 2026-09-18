@@ -5,11 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeB = document.querySelector('button.close');
 
   menu.addEventListener('click', () => {
-    nav.classList.toggle('active');
+    const isOpen = nav.classList.toggle('active');
     body.classList.toggle('no-scroll');
+    menu.setAttribute('aria-expanded', isOpen);
   });
   closeB.addEventListener('click', () => {
     nav.classList.remove('active');
     body.classList.remove('no-scroll');
+    menu.setAttribute('aria-expanded', 'false');
   });
 });

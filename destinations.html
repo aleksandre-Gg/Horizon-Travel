@@ -14,13 +14,13 @@
  <header>
     <div class="brand-container">
     <a href="index.html">
-    <img src="icons/horizon-logo.svg" alt="Logo" class="logo"></a>
+    <img src="icons/horizon-logo.svg" alt="Horizon logo" class="logo"></a>
     <a href="index.html" class="site-title">Horizon Travel</a>
     </div>
-  <button class="menu">☰</button>
+  <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav>
-     <div class="colorB">
-      <button class="close">&times;</button>
+      <div class="colorB">
+      <button class="close" aria-label="Close menu">&times;</button>
      </div>
         <ul>
           <li><a href="destinations.html">Destinations</a></li>
@@ -30,11 +30,11 @@
        </ul>
     </nav>
  </header>
-  <div class="hero">
+  <div class="hero" role="region" aria-label="Featured destinations carousel">
     <div class="track">
       <!--slide 1-->
       <div class="slides">
-        <img src="images/caucasus.webp" alt="Caucasus Mountains" loading="eager" fetchpriority="high">
+        <img src="images/caucasus.webp" alt="Hikers exploring a mountain trail" loading="eager" fetchpriority="high">
         <div class="hero-text">
         <h1>Explore Caucasus Mountains</h1>
         <h2>Hike through mountains,</h2> 
@@ -43,7 +43,7 @@
       </div>
       <!--slide 2-->
       <div class="slides">
-        <img src="images/indonesia.webp" alt="Bali, Indonesia">
+        <img src="images/indonesia.webp" alt="Scenic beachfront gazebo in Bali">
         <div class="hero-text">
         <h1>Featured Bali Tours</h1>
         <h2>Beaches with stunning views,</h2> 
@@ -52,7 +52,7 @@
       </div>
       <!--slide 3-->
       <div class="slides">
-        <img src="images/australia.webp" alt="Melbourne, Australia">
+        <img src="images/australia.webp" alt="Melbourne at night">
         <div class="hero-text">
         <h1>Nightlife in Melbourne</h1>
         <h2>Join local live music events,</h2> 
@@ -61,7 +61,7 @@
       </div>
       <!--slide 4-->
       <div class="slides">
-        <img src="images/peru.webp" alt="Cusco, Peru">
+        <img src="images/peru.webp" alt="Calle Siete Borreguitos in the San Blas artisan neighborhood">
         <div class="hero-text">
         <h1>Discover Historic Cusco</h1>
         <h2>Walk narrow cobblestone streets,</h2> 
@@ -70,7 +70,7 @@
       </div>
       <!--slide 5-->
       <div class="slides">
-        <img src="images/uzbekistan.webp" alt="Samarkand, Uzbekistan">
+        <img src="images/uzbekistan.webp" alt="Tilya-Kori Madrasa, a 17th-century Islamic school located in Registan Square">
         <div class="hero-text">
         <h1>The Wonders of Samarkand</h1>
         <h2>Check out major landmarks and monuments,</h2> 
@@ -79,7 +79,7 @@
       </div>
       <!--slide 6-->
       <div class="slides">
-        <img src="images/switzerland.webp" alt="Oeschinen Lake, Switzerland">
+        <img src="images/switzerland.webp" alt="View of the lake surrounded by mountains and greenery">
         <div class="hero-text">
         <h1>What Oeschinen Lake Offers</h1>
         <h2>One of the most charming alpine lakes</h2> 
@@ -88,12 +88,12 @@
       </div>
     </div>
   <div class="dots">
-    <button class="dot"></button>
-    <button class="dot"></button>
-    <button class="dot"></button>
-    <button class="dot"></button>
-    <button class="dot"></button>
-    <button class="dot"></button>
+    <button class="dot" aria-label="Go to slide 1: Caucasus Mountains" aria-current="true"></button>
+    <button class="dot" aria-label="Go to slide 2: Bali, Indonesia"></button>
+    <button class="dot" aria-label="Go to slide 3: Melbourne, Australia"></button>
+    <button class="dot" aria-label="Go to slide 4: Cusco, Peru"></button>
+    <button class="dot" aria-label="Go to slide 5: Samarkand, Uzbekistan"></button>
+    <button class="dot" aria-label="Go to slide 6: Oeschinen Lake, Switzerland"></button>
   </div>
 </div>
   <div class="banner"></div>

@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 .logo {
-  width: 35px;        
+  width: 40px;        
   height: auto;       
   object-fit: contain;
 }
@@ -152,6 +152,7 @@ nav a:hover {
   color: rgb(161, 182, 218);
   text-decoration: none;
   cursor: pointer;
+  line-height: 1.5;
 }
 
 .footer-links a:hover {
@@ -160,6 +161,7 @@ nav a:hover {
 
 .wrapper {
   padding-top: 10px;
+  list-style: none;
 }
 
 .socials-container {
@@ -169,8 +171,8 @@ nav a:hover {
 }
 .socials {
   display:inline-block;
-  width: 30px;
-  height: 30px; 
+  width: 35px;
+  height: 35px; 
   cursor: pointer;
 }
 
