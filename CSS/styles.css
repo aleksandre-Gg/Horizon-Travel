@@ -1,12 +1,12 @@
-
 .home {
   position: relative;
   width: 100%;
   height: 100vh; 
   overflow: hidden;
+  z-index: 0;
 }
 
-.home img {
+.home img{
   position: absolute;
   top: 0;
   left: 0;
@@ -15,6 +15,7 @@
   object-fit: cover; 
   filter: blur(2px);
   opacity: 40%;
+  z-index: 1;
 }
 
 .hero-text {
@@ -23,7 +24,18 @@
   transform: translateY(-50%);
   text-align: left;            
   width: 100%;   
-  padding: 0 40px;    
+  padding: 0 40px; 
+  z-index: 2;   
+}
+
+h1 {
+  font-size: clamp(48px, calc(21.333px + 2.222vw), 64px);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(32px, calc(18.667px + 1.111vw), 40px);
+  font-weight: lighter;
 }
 
 .home-banner {
@@ -45,7 +57,7 @@
   display: inline-block;
   white-space: nowrap;
   font-size: 36px;
-  clip-path: inset(0 100% 0 0);
+  clip-path: inset(0 100% 0 0)
 }
 
 /*  color: rgb(139, 175, 238);*/
@@ -75,20 +87,6 @@
   background: currentColor;
   opacity: 0;
   animation: blink-cursor 0.75s step-end 1s infinite;
-}
-
-h1 {
-  font-size: clamp(48px, calc(21.333px + 2.222vw), 64px);
-  font-weight: 700;
-}
-
-h2 {
-  font-size: clamp(32px, calc(18.667px + 1.111vw), 40px);
-  font-weight: lighter;
-}
-
-h3 {
-  letter-spacing: 3px;
 }
 
 /*destionations section*/
@@ -386,23 +384,25 @@ section h3 {
 /*dimensions*/
 
  @media (max-width: 768px) {
+  .home {
+    max-height: 900px;
+  }
+
   h1{
     font-size:36px;
   }
 
-  h3 {
-    font-size:16px;
+  .home-banner {
+    padding:5vh;
+  }
+  .home-banner h3 {
+    font-size:1.5rem;
+    margin:1rem;
   }
   
-  .home-banner{
-    padding:3.5rem;
-  }
-  .home-banner span.highlight{
-    font-size:22px;
-  }
-
+  .home-banner span.highlight,
   .home-banner span.regular{
-    font-size:22px;
+    font-size:24px;
   }
 
   /*destinations section*/
@@ -573,8 +573,7 @@ section h3 {
 
   section h3{
     font-size:16px;
-    margin-bottom:1em;
-    
+    margin-bottom:1em; 
   }
 
   .wwf h3{

@@ -10,7 +10,6 @@ if (track) {
  let timer;
  let currentIndex = 0; 
 
-
 function goToSlide(index) {
  currentIndex = (index + slides.length) % slides.length; 
  track.style.transform = `translateX(-${currentIndex * 100}%)`;
@@ -40,13 +39,37 @@ function resetTimer() {
  }
 }
 
+let startX = 0;
+let endX = 0;
+
+track.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+track.addEventListener('touchend', (e) => {
+  endX = e.changedTouches[0].clientX;
+  swipeFinger();
+});
+
+function swipeFinger() {
+  const distance = startX - endX;
+  const threshold = 50; 
+
+  if (distance > threshold) {  //swipe left
+    goToSlide(currentIndex + 1);
+    resetTimer();
+  } else if (distance < -threshold) {  //swipe right
+    goToSlide(currentIndex - 1);
+    resetTimer();
+  }
+}
+
 dots.forEach((dot, i) => {
  dot.addEventListener('click', () => {
  goToSlide(i);
  resetTimer(); 
  });
 });
-
 
 hero.setAttribute('tabindex', '0');
 hero.addEventListener('keydown', (e) => {
