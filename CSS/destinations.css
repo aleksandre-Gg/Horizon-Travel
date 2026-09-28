@@ -78,6 +78,7 @@ h2 {
   flex: 0 0 100%;   
 }
 
+/*section*/
 section {
   margin-top:4rem;
   padding:40px;
@@ -100,8 +101,13 @@ section h3 {
 section h4{
   font-size:clamp(24px, calc(10.667px + 1.111vw), 32px);
   white-space: nowrap;
+  margin: 20px 0;
+  font-weight:bold;
 }
 
+section h5{
+  font-size: clamp(16px, calc(2.667px + 1.111vw), 24px);
+}
 section p{
   margin-top: 20px;
   font-size: clamp(16px, calc(2.667px + 1.111vw), 24px);
@@ -109,15 +115,15 @@ section p{
   line-height: 1.5;
 }
 
-/*destinations grid*/
-.destinations-grid {
+/*cards grid*/
+.card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(20px, calc(-10px + 2.5vw), 38px);
   padding:0;
 }
 
-.destinations-grid img:not(.location-icon) {
+.card-grid img:not(.location-icon) {
   width: 100%;
   aspect-ratio: 4 / 3;
   height: auto;
@@ -142,8 +148,7 @@ section p{
 }
 
 .card-item img:hover:not(img.location-icon){
-  transform: scale(1.09);
-  filter:brightness(60%);
+  transform: scale(1.1);
 }
 
 .card-text {
@@ -156,13 +161,12 @@ section p{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: left;
   gap:5px;
 }
 
 img.location-icon {
-  width: clamp(20px, calc(6.667px + 1.111vw), 28px);
-  height: clamp(20px, calc(6.667px + 1.111vw), 28px);
+  width: clamp(24px, calc(10.667px + 1.111vw), 32px);
+  height: clamp(24px, calc(10.667px + 1.111vh), 32px);
   border:none;
 }
 
@@ -219,7 +223,7 @@ a.card-button {
   section h3{
     font-size:1.25rem;
   }
-  .destinations-grid {
+  .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -231,7 +235,7 @@ a.card-button {
   .body{
     margin:1rem;
   }
-  .destinations-grid {
+  .card-grid {
     grid-template-columns: repeat(1, 1fr);
   }
  }
