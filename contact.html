@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact us - Horizon Travel</title>
   <script src="JS/script.js" defer></script>
+  <script src="JS/contact.js" defer></script>
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/contact.css">
   <link rel="icon" href="icons/horizon-logo.svg">
@@ -71,10 +72,14 @@
           aria-required="true">
         <!--textarea-->
         <label for="write-to-us">Write to us</label>
+        <div class="textarea-wrap">
         <textarea 
           id="write-to-us" 
           name="write-to-us" 
-          placeholder="Enter your message"></textarea>
+          placeholder="Enter your message"
+          maxlength="500"></textarea>
+        <span class="counter">(0 / 500)</span>   
+        </div>
       </div>
     <div class="button-div">
       <button type="submit" class="submit-btn">Submit</button>
