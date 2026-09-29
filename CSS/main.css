@@ -34,35 +34,34 @@ header {
   align-items: center;
   padding: 1rem 1rem;
   background-color: rgba(23, 24, 51, 1);
-  font-family: 'Roboto Slab';
   font-weight: 500;
-  white-space: nowrap;
-
 }
 
 .site-title{
   text-decoration: none;
   color:white;
-  font-size:24px;
+  font-size: 24px;
+  white-space: nowrap;
+  font-family: 'Roboto Slab';
 }
 
 nav ul {
-  font-weight: bold;
+  font-weight: 900;
   display: flex;
   list-style: none;
-  gap:1rem;
+  gap: clamp(8px, calc(-26.667px + 2.222vw), 24px);
   white-space: nowrap;
 }
 
 nav a {
   text-decoration: none;
   font-size:1rem;
-  color: rgba(198, 198, 198, 1); 
+  color: rgb(161, 182, 218);
   padding: 0 1rem;
 }
 
 nav a:hover {
-  color:rgb(255, 245, 209);
+  color:white;
 }
 
 .brand-container {
@@ -156,7 +155,7 @@ nav a:hover {
 }
 
 .footer-links a:hover {
-  color: white;
+  color:white;
 }
 
 .wrapper {
@@ -178,7 +177,6 @@ nav a:hover {
 
 /*dimensions*/
  @media (max-width: 768px) { 
-
   body.no-scroll {
   overflow: hidden;
   }
