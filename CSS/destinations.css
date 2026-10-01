@@ -53,6 +53,7 @@ h2 {
   gap: 30px;
   z-index: 2;
 }
+
 .dot{
   width:15px;
   height:15px;
@@ -67,6 +68,7 @@ h2 {
 }
 
 .track {
+  width: 100%;
   height: 100%;
   display: flex;
   transition: transform 1.5s ease;
@@ -76,6 +78,7 @@ h2 {
   position: relative;
   height: 100%;
   flex: 0 0 100%;   
+  min-width: 100%;
 }
 
 /*section*/
@@ -195,15 +198,80 @@ a.card-button {
   font-size:1rem;
   white-space: nowrap;
 }
+/*events*/
+.events h2{
+  display: flex;
+  justify-content: center;
+}
+
+.events-box {
+  display: flex;
+  flex-direction: column;
+  background:rgba(62, 62, 62, 0.426);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5rem 0;
+  border:0.8px solid rgba(255, 255, 255, 0.5);
+}
+
+.row {
+  display: flex;
+  align-items: center;        
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);   
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex: 0 0 clamp(220px, 25%, 320px);
+  gap: clamp(20px, calc(13.333px + 0.556vw), 24px);                                  
+}
+
+.date {
+  font-size:1.5rem;
+  font-weight: bold;
+}
+
+img.event-svg {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.text {
+  display: block;
+  flex: 1; 
+  font-size: clamp(24px, calc(10.667px + 1.111vw), 32px);
+  font-weight: bold;
+  line-height: 2;
+}
+
+.text small {
+  display: block; 
+  font-size: clamp(16px, calc(2.667px + 1.111vw), 24px);
+  font-weight: 300;
+}
+
+img.event-img {
+  flex-shrink: 0; 
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border:0.8px solid rgba(255, 255, 255, 0.5);
+}
 
 /*media*/
 
 @media (max-width: 1000px) {
   .hero {
     max-height:1200px;
-  }
-  .hero {
-    max-width:900px;
   }
 
   h1{
@@ -214,6 +282,10 @@ a.card-button {
     font-size:1.25rem;
   }
   
+  section {
+    margin-top: 2rem;
+  }
+
   section h2 {
     font-size:2rem;
     padding:0;
@@ -226,32 +298,85 @@ a.card-button {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .events-box {
+    margin: 2.5rem 0;
+  }
+
+  .left {
+    flex: 0 0 200px;
+  }
+
+  img.event-img {
+    width: 220px;
+    height: 120px;
+  }
 }
 
 @media (max-width: 768px) {
+  section h4,
+  a.card-button {
+    white-space: normal;
+  }
+
   .hero {
-    max-height: 900px;
+    height: 90vh;
   }
-  .body{
-    margin:1rem;
+
+  section {
+    margin-top: 1rem;
   }
+
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
+    gap:40px;
   }
- }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .left,
+  .text {
+    flex: none;
+    width: 100%;
+  }
+
+  img.event-img {
+    width: 100%;
+    height: 180px;
+  }
+}
 @media (max-width: 480px) {
   .hero {
-    max-height: 700px;
+    height: 70vh;
   }
-  .body{
-    margin:2rem;
-  }
+
   section h2{
-    font-size:24px;
+    font-size:1.5rem;
   }
 
   section h3{
     font-size:1rem;
     margin-bottom:1em; 
+  }
+
+  .left {
+  display: flex;
+  align-items: center;
+  }
+
+  .text {
+    font-size: 1.25rem;
+  }
+  .text small {
+    font-size: 1rem;
+  }
+
+  img.event-svg {
+    width: 50px;
+    height: 50px;
   }
 }
