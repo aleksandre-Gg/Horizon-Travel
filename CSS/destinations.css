@@ -102,7 +102,7 @@ section h3 {
 } 
 
 section h4{
-  font-size:clamp(24px, calc(10.667px + 1.111vw), 32px);
+  font-size:clamp(22px, calc(5.333px + 1.389vw), 32px);
   margin: 20px 0;
   font-weight:bold;
 }
@@ -117,11 +117,16 @@ section p{
   font-weight: 300;
 }
 
+.attractions, .hotels, .houses, .events {
+  margin-top: 0;
+}
+
 /*cards grid*/
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(20px, calc(-10px + 2.5vw), 38px);
+  row-gap: 3rem;
   padding:0;
 }
 
@@ -201,6 +206,7 @@ a.card-button {
   white-space: nowrap;
 }
 /*events*/
+
 .events h2{
   display: flex;
   justify-content: center;
@@ -291,7 +297,10 @@ img.event-img {
 .card-margin {
   margin-top: auto;
 }
-
+/*houses*/
+.houses {
+  margin-top: 0;
+}
 /*media*/
 @media (max-width: 1000px) {
   .hero {
