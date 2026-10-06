@@ -225,16 +225,7 @@ nav a:hover {
   nav ul li {
     text-align: center;
   }
-  
-  /*
-  nav ul li::after {
-  content: "";
-  display: block;
-  width: 60%;
-  margin: 0.5rem auto 0;
-  border-bottom: 0.5px solid rgba(161, 182, 218, 0.5);
-  }
-  */
+
   nav a {
     display: inline-block; 
     padding:1rem;
@@ -307,6 +298,10 @@ nav a:hover {
     overflow-x: hidden;
   }
 
+  .site-title {
+    font-size: 20px;
+  }
+  
   .footer-links {
     gap:30px;
     font-size:12px;

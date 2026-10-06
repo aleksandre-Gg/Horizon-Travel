@@ -103,19 +103,18 @@ section h3 {
 
 section h4{
   font-size:clamp(24px, calc(10.667px + 1.111vw), 32px);
-  white-space: nowrap;
   margin: 20px 0;
   font-weight:bold;
 }
 
 section h5{
   font-size: clamp(16px, calc(2.667px + 1.111vw), 24px);
+  padding: 5px 0;
 }
 section p{
-  margin-top: 20px;
+  margin: 15px 0;
   font-size: clamp(16px, calc(2.667px + 1.111vw), 24px);
   font-weight: 300;
-  line-height: 1.5;
 }
 
 /*cards grid*/
@@ -155,6 +154,9 @@ section p{
 }
 
 .card-text {
+  display: flex;         
+  flex-direction: column; 
+  flex: 1;
   padding:20px; 
   z-index: 2; 
   flex-wrap: nowrap;
@@ -210,7 +212,7 @@ a.card-button {
   background:rgba(62, 62, 62, 0.426);
   padding: 20px;
   border-radius: 10px;
-  margin: 5rem 0;
+  margin: 5rem 0 0;
   border:0.8px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -267,8 +269,30 @@ img.event-img {
   border:0.8px solid rgba(255, 255, 255, 0.5);
 }
 
-/*media*/
+/*hotels*/
+.price {
+  color: rgb(86, 193, 116);
+}
 
+.review {
+  color: rgb(255, 216, 109);
+}
+
+.gap {
+  gap: 10px;
+}
+
+.tags {
+  font-size: clamp(16px, calc(2.667px + 1.111vw), 24px);
+  font-weight: bold;  
+  margin:15px 0;
+}
+
+.card-margin {
+  margin-top: auto;
+}
+
+/*media*/
 @media (max-width: 1000px) {
   .hero {
     max-height:1200px;
