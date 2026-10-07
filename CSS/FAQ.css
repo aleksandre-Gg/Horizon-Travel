@@ -1,9 +1,7 @@
 h2 {
   display: flex;
-  margin-top:5rem;
-  margin-bottom:3rem;
+  margin:4rem 0;
   justify-content: center;
-  font-size: 3rem;
   font-weight: bold;
   font-family:'Roboto Slab';
   padding:0;
@@ -17,7 +15,6 @@ h2 {
   align-items: center;
   margin: 1rem auto;
   max-width: 1200px; 
-  padding: 0 20px;
 }
 
 .FAQ {
@@ -27,7 +24,7 @@ h2 {
   font-size: 1.25rem;
   font-weight: 300;
   font-family: 'Roboto Slab';
-  gap: 20px;
+  gap: 1.25rem;
   margin:3rem 0;
 }
 
@@ -77,12 +74,12 @@ h2 {
 
 /*cta*/
 .cta-text{
+  color:white;
   text-align: center;
-  font-size:28px;
+  font-size: 1.8rem;
   font-family:'Roboto slab';
   font-weight: bold;
-  padding:5rem 40px;
-  margin-bottom:5rem;
+  margin-bottom:2rem;
 }
 
 .cta-text a{
@@ -90,11 +87,6 @@ h2 {
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-thickness: 1px;
-  transition: color 1s ease, text-decoration-color 1s ease;
-}
-
-.cta-text .link2:hover{
-  color:rgb(252, 239, 192);
 }
 
 @media (max-width: 768px) {
@@ -110,8 +102,7 @@ h2 {
   }
 
   .cta-text{
-    font-size:16px;
-    margin:6rem 0;
+    font-size:1rem;
   }
 }
 @media (max-width:480px) {

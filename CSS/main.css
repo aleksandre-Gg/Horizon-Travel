@@ -77,6 +77,12 @@ nav a:hover {
   object-fit: contain;
 }
 
+.banner {
+  display: flex;
+  background-color: rgba(23, 24, 51, 1);
+  padding: 40px;
+}
+
 .menu {
   display: none;
 }
@@ -85,6 +91,39 @@ nav a:hover {
   display:none;
 }
 
+h1 {
+  font-size: clamp(48px, calc(21.333px + 2.222vw), 64px);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(32px, calc(18.667px + 1.111vw), 40px);
+  font-weight: lighter;
+}
+
+/*shared sections*/
+section {
+  margin-top:2rem;
+  padding:40px;
+}
+
+section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family:'Roboto Slab';
+  letter-spacing: 3px;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  font-weight: 400; 
+  margin: 2rem 0;
+  color:rgb(252, 239, 192);
+} 
+
+section p {
+  font-weight:300;
+}
 /*footer*/
 .footer {
   background-color: rgba(23, 24, 51, 1);
@@ -220,9 +259,6 @@ nav a:hover {
     flex-direction: column;
     padding-top:2rem;
     width: 100%;
-  }
-
-  nav ul li {
     text-align: center;
   }
 
@@ -277,12 +313,22 @@ nav a:hover {
     height:auto;
   }
 
+  h1 {
+    font-size: 2.25rem;
+  }
   h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
+  p {
+    font-size: 1rem;
+  }
+  
+  section h2 {
+    font-size: 2.25rem;
+  }
   .footer{
-    font-size:16px;
+    font-size: 1rem;
   }
    
   .socials{
@@ -299,7 +345,7 @@ nav a:hover {
   }
 
   .site-title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   
   .footer-links {
@@ -308,7 +354,7 @@ nav a:hover {
   }
 
   .footer-links h4{
-    font-size:16px;
+    font-size:1rem;
   }
 
   .footer-brand p{

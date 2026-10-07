@@ -27,22 +27,6 @@
   padding: 0 40px;    
 }
 
-.banner {
-  display: flex;
-  background-color: rgba(23, 24, 51, 1);
-  padding: 40px;
-}
-
-h1 {
-  font-size: 56px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 40px;
-  font-weight: lighter;
-}
-
 /*slider*/
 .dots{ 
   position:absolute;
@@ -82,25 +66,6 @@ h2 {
 }
 
 /*section*/
-section {
-  margin-top:4rem;
-  padding:40px;
-}
-
-section h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  font-family:'Roboto Slab';
-  letter-spacing: 3px;
-}
-
-section h3 {
-  font-size: 1.5rem;
-  font-weight: 400; 
-  margin: 1em 0;
-  color:rgb(252, 239, 192);
-} 
-
 section h4{
   font-size:clamp(22px, calc(5.333px + 1.389vw), 32px);
   margin: 20px 0;
@@ -114,11 +79,6 @@ section h5{
 section p{
   margin: 15px 0;
   font-size: clamp(16px, calc(2.667px + 1.111vw), 24px);
-  font-weight: 300;
-}
-
-.attractions, .hotels, .houses, .events {
-  margin-top: 0;
 }
 
 /*cards grid*/
