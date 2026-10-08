@@ -86,8 +86,10 @@ section p{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(20px, calc(-10px + 2.5vw), 38px);
-  row-gap: 3rem;
-  padding:0;
+}
+
+.card-grid + .card-grid {
+  margin-top: 3rem;
 }
 
 .card-grid img:not(.location-icon) {
