@@ -42,7 +42,7 @@
 .destinations-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: clamp(20px, calc(-10px + 2.5vw), 38px);
   padding:0;
 }
 
@@ -120,7 +120,7 @@
   display: block;
   margin: 0 0 40px 0;
   max-width: 1200px;
-  height:400px;
+  height:420px;
   object-fit: cover;
   flex-grow:1;
   flex-shrink: 0;
@@ -130,15 +130,13 @@
 .trip-p {
   flex: 1 1;
   min-width: 500px;
-  line-height:1.2;
-  font-size: clamp(16px, 1vw, 22px);
-  font-weight: 300;
   flex-basis:500px; 
   flex-shrink: 0; 
 }
 
 .trip-p p {
   margin-bottom: 1.5rem;
+  font-size: clamp(16px, 1vw, 22px);
 }
 
 .trip-p p:last-child {
@@ -148,19 +146,17 @@
 /*what we offer section*/
 .wwf {
   background-color: rgba(23, 24, 51, 1);
-  padding: 40px 20px; 
 }
 
 .wwf-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom:6rem;
 }
 
 .wwf-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 3rem;
-  max-width: 1200px;
   margin: 0 auto;
   align-items: center;
 }
@@ -168,7 +164,7 @@
 .wwf-icons {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap:clamp(60px, calc(-6.667px + 5.556vw), 100px);
 }
 
 .wwf-item {
@@ -191,18 +187,14 @@
   text-align: left;   
 }
 
-.wwf h3 {
-  font-family: 'Roboto Slab';
-  font-size: 24px;
-  font-weight: 500; 
-  color: white;
+.wwf h5 {
+  font-size: 20px;
   margin: 0 0 12px 0;
 }
 
 .wwf p {
   color: rgb(161, 182, 218);
   margin: 0;
-  line-height: 1.4;
 }
 
 .wwf-img {
@@ -222,7 +214,7 @@
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: clamp(20px, calc(-10px + 2.5vw), 38px);
 }
 
 .review-card {
@@ -232,24 +224,19 @@
   min-height:500px;
   background-color: rgba(62, 62, 62, 0.426);
   padding:20px;
-  font-family:'Roboto Slab';
   font-weight:bold;
   border-radius: 10px;
-  gap:20px;
+  gap: 20px;
 }
 
 .review-card h4 {
   font-size: clamp(18px, 1.25vw, 24px);
   font-weight: bold;
-  line-height: 1.5;
   height: calc(1.5em * 2);
   margin: 0;
 }
 .review-card p {
   flex: 1 1;
-  font-size: clamp(16px, 1.11vw, 22px);
-  font-weight: 300;
-  font-family: 'Roboto';
   margin:0;
   padding: 10px 0;
   color: rgba(255, 255, 255, 0.8);
@@ -259,21 +246,14 @@
   font-size: clamp(16px, 1.11vw, 22px);
 }
 
-.review-card h6 {
-  font-size: clamp(16px, 1.11vw, 22px);
+.review-card p:last-child{
   font-weight:bold;
+  color: white;
 }
 
 .date {
   margin-top: auto;
   padding:0;
-  font-size: clamp(14px, 0.97vw, 18px);
-}
-
-.name-stars {
-  font-family:'Roboto';
-  font-weight: 300;
-  font-size: clamp(16px, 1.11vw, 22px);
 }
 
 .stars {
@@ -322,7 +302,6 @@
     min-height:200px;
     max-height:300px;
     padding:0;
-    margin:20px 0;
   }
   
   .trip-p{
@@ -333,12 +312,13 @@
 
   /*wwf-section*/
   .wwf {
-    padding: 1rem 0;
+    padding:1rem 0;
     margin:0;
   }
 
   .wwf-title {
-    padding:2rem 10px 2rem;
+    padding-top:2rem;
+    margin-bottom:2rem;
   }
 
   .wwf-content {
@@ -355,7 +335,7 @@
   }
 
   .wwf-icons img{
-    max-width:70px;
+    max-width:50px;
     margin: 0 auto 10px auto;
   }
 
@@ -364,11 +344,11 @@
     align-items: center;  
     justify-content: center;      
     flex-direction: column;
-    text-align: center;
     flex: 0 1 calc(100% / 3);
     max-width: calc(100% / 3);
     min-width: 0;
     padding:10px;
+    gap:0px;
   }
 
   .wwf-text {
@@ -376,16 +356,10 @@
     width: 100%;
     max-width: 100%;
     height: 100%;
-    padding-bottom:40px;
-  }
-
-   .wwf h3 {
-    min-height: 2.4rem;  
   }
   .wwf p {
     font-size: 14px;
     min-width: 0;
-    padding-top:2px;
   }
 
   .wwf-img {
@@ -393,7 +367,6 @@
     display: flex;
     justify-content: center;
     padding: 0;
-    margin-top: 30px;
   }
 
   .wwf-img img {
@@ -424,14 +397,10 @@
     max-height: 700px;
   }
 
-  .wwf h3{
-    font-size:12px;
-  }
-
-  .wwf p{
+  .wwf h5, .wwf p{
     font-size:12px;
   }
   .wwf-icons{
-    max-width: 50px;
+    max-width: 40px;
   }
 }
