@@ -1,0 +1,149 @@
+.hero {
+  outline: none;
+  -webkit-tap-highlight-color: transparent; /*for mobile*/
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  line-height:1.5;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+}
+
+.main {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter: blur(2px);
+  opacity: 70%;
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  text-align: left;             
+  left: 40px;  
+  z-index: 2;  
+}
+
+h1 {font-size: clamp(4rem, calc(2.333rem + 2.222vw), 5rem);}
+h2 {font-size: clamp(2.5rem, calc(1.667rem + 1.111vw), 3rem);}
+h3 {font-size: clamp(2rem, calc(0.333rem + 2.222vw), 3rem);}
+
+p {
+  font-weight:300;
+  font-size: clamp(1.25rem, calc(0.833rem + 0.556vw), 1.5rem);
+}
+
+.right-side {
+  position: absolute;
+  padding: 40px;
+  right:0px;
+  z-index: 2;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  display: flex;
+  height: fit-content;    
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cards-text{
+  justify-content: center;
+}
+
+.cards-text h2{
+  font-size: 1.25rem;
+}
+
+.hero-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, calc(-10px + 2.5vw), 38px);
+  width:100%;
+}
+
+.hero-cards img {
+  width: 20vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid white;
+  transition: transform 0.5s ease;
+}
+
+.hero-cards img:hover {
+  transform: translateY(-10px);
+}
+
+.cta-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+}
+.cta-buttons a{
+  width: fit-content;
+  height:auto;
+  margin:20px 0;
+  background-color: rgb(19, 20, 59);
+  border: 1px solid rgb(121, 156, 217, 0.8);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: clamp(1.000rem, calc(0.167rem + 1.111vw), 1.500rem);
+}
+
+.cta-buttons a:hover {
+  background-color: rgb(121, 156, 217);
+}
+
+a.second-button {
+  background:none;
+  border: 1px solid white;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text {display: none;}
+
+  .right-side {
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-cards img {
+    width:100%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-cards {display: none;}
+
+  .cta-buttons {
+    flex-direction: column; 
+    width: 100%;
+    gap:0;
+  }
+
+  .cta-buttons a {
+    width: 100%;
+  }
+
+  p {
+    font-size:1rem;
+  }
+}

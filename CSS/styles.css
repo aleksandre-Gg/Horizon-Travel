@@ -22,21 +22,11 @@
   position: absolute;
   top: 50%;
   transform: translateY(50%);
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
   text-align: left;            
   width: 100%;   
   padding: 0 40px; 
   z-index: 2;   
-}
-
-.banner {
-  justify-content: center;
-  text-align: center;
-}
-
-.banner h3 {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5em;
 }
 /*destionations section*/
 .destinations-grid {
@@ -58,6 +48,12 @@
   overflow: hidden;
   display: block;
   width: 100%;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .card-item::before {
@@ -68,43 +64,36 @@
   right: 0;
   height: 30%;
   background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
-  pointer-events: none;
+}
+
+.card-item a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .card-text {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  inset: 0;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  padding: 20px;        
   z-index: 2; 
-  font-weight: 500;
 }
 
-.card-text h4 {
-  font-size:1.5rem;
-  text-align:left;
-  color:white;
+.card-text h4,
+.card-text a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .card-text a {
   font-weight:300;
-  color: white;
-  text-decoration: none;
-  font-size:20px;
-  text-align:left;
-}
-
-.card-item {
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  opacity: 1;
-}
-
-.card-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-}
-
-.card-item img:hover{
-  opacity: 0.40;
+  font-size: 1.25rem;
 }
 
 /*trip section*/
@@ -400,6 +389,7 @@
   .wwf h5, .wwf p{
     font-size:12px;
   }
+
   .wwf-icons{
     max-width: 40px;
   }
