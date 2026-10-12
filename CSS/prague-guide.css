@@ -2,6 +2,7 @@
   outline: none;
   -webkit-tap-highlight-color: transparent; /*for mobile*/
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
   line-height:1.5;
@@ -110,6 +111,31 @@ a.second-button {
   border: 1px solid white;
 }
 
+section h2 {
+  margin-bottom:2rem;
+}
+
+.time-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  gap: 4rem;
+}
+
+.time-flex img {
+  object-fit: cover;
+  min-width: 0;
+  width:500px;
+  height:clamp(350px, calc(183.333px + 13.889vh), 450px);
+  border-radius: 10px;
+  filter: brightness(0.9);
+  flex-shrink: 0;
+}
+
+.time-text, .time-flex img {
+  flex: 1 1 300px;
+}
 @media (max-width: 1000px) {
   .hero {
     flex-direction: column;
@@ -131,6 +157,9 @@ a.second-button {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    max-height: 900px;
+  }
   .hero-cards {display: none;}
 
   .cta-buttons {
@@ -142,8 +171,33 @@ a.second-button {
   .cta-buttons a {
     width: 100%;
   }
-
   p {
     font-size:1rem;
+  }
+  section {
+    padding-bottom:2rem;
+  }
+  section h2{
+    margin-bottom: 2rem;
+  }
+  .time-flex {
+    gap:2rem;
+  }
+  .best-time {
+    margin:0;
+  }
+
+  .time-flex img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    max-height: 800px;
+  }
+
+  .time-flex img {
+    max-height: 30vh;
   }
 }
