@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horizon Travel</title>
+  <title>Prague Guide - Horizon Travel</title>
   <script src="JS/script.js" defer></script>
   <script src="JS/prague-guide.js" defer></script>
   <link rel="stylesheet" href="CSS/main.css">
@@ -55,8 +55,11 @@
   </div>
   <div class="banner"></div>
 <!--why visit section-->
-<section class="visit reveal">
+<section class="visit">
+  <div class="heading reveal">
   <h2>Why visit Prague?</h2>
+  </div>
+  <div class="reveal">
     <p>Prague is an important city with artistic and musical heritage, its historic center dates back to 11th-14th century.</p>
     <p>Its buildings, encompassing a blend of medieval, renaissance and baroque architecture could be compared to an open air history museum.</p>
     <br>
@@ -67,12 +70,16 @@
     <p>The highly renowned novelist Franz Kafka was born in Prague and spent most of his days there. 
       an outdoor kinetic sculpture dedicated to him, made in 2014 by David Černý attracted a lot of people's attention worldwide.</p>
     <br>
-    <p>While it is true that Prague can get quite touristy at times, there are several non touristy districts we will recommend to get away from busy areas.</p>
+    <p>While it is true that Prague can get quite touristy at times, 
+      there are several non touristy districts we will recommend to get away from busy areas.</p>
+    </div>
 </section>
 <!--best time section-->
-<section class="best-time reveal">
+<section class="best-time">
+  <div class="heading reveal">
   <h2>Best time to visit</h2>
-  <div class="time-flex">
+  </div>
+  <div class="time-flex reveal">
   <img src="images/prague-autumn.webp" alt="">
     <div class="time-text">
     <p>The best time to visit prague is in September to October, 
@@ -88,6 +95,145 @@
       Because of that, we generally avoid booking in July or August.
     </p>
     </div>
+  </div>
+</section>
+<!--what to do section-->
+<section class="what-to-do">
+  <div class="heading reveal">
+  <h2>What to do</h2>
+  </div>
+  <div class="content reveal">
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="sights">Sights</button>
+      <button class="tab" data-tab="food">Food &amp; Drinks</button>
+      <button class="tab" data-tab="entertainment">Entertainment</button>
+    </div>
+      <div class="panel active" id="sights">
+        <article class="card">
+          <img src="images/prague-castle.webp" alt="Prague Castle">
+          <div class="card-text">
+            <h4>Prague Castle</h4>
+            <p>(Pražský hrad)</p>
+            <p>The largest castle complex not only in the Czech Republic, but the world.</p>
+            <p>Opening Hours:</p>
+            <p>6:00 AM-10:00 PM</p>
+          </div>
+        </article>
+         <article class="card">
+          <img src="images/old-town-square.webp" alt="Old Town Square">
+          <div class="card-text">
+            <h4>Old Town Square</h4>
+            <p>(Staroměstské náměstí)</p>
+            <p>A must see, timeless square located in the heart of Prague.</p>
+            <p>Opening Hours:</p>
+            <p>12:00 AM-12:00 PM</p>
+          </div>
+        </article>
+         <article class="card">
+          <img src="images/charles-bridge.webp" alt="Charles Bridge">
+          <div class="card-text">
+            <h4>Charles Bridge</h4>
+            <p>(Karlův most)</p>
+            <p>Famous stone bridge that you can't miss crossing at least once while visiting. </p>
+            <p>Opening Hours:</p>
+            <p>12:00 AM-12:00 PM</p>
+          </div>
+        </article>
+         <article class="card">
+          <img src="images/astronomical-clock.webp" alt="Astronomical Clock">
+          <div class="card-text">
+            <h4>Astronomical Clock</h4>
+            <p>(Pražský orloj)</p>
+            <p>Witness daily astronomical clock shows in the old town square.</p>
+            <p>Opening Hours:</p>
+            <p>9:00 AM-11:00 PM</p>
+          </div>
+        </article>
+      </div>
+      <div class="panel" id="food">
+        <article class="card">
+          <img src="images/prague-food1.webp" alt="Prague Food">
+          <div class="card-text">
+            <h4>Breakfast &amp; Brunch</h4>
+            <p>(Snídaně a brunch)</p>
+            <p>Start your day with our favorite morning spots in the city.</p>
+            <p>Best reserved:</p>
+            <p>9:00 AM-11:30 AM</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/prague-food2.webp" alt="Prague Food">
+          <div class="card-text">
+            <h4>Old Town Cafés</h4>
+            <p>(Staroměstské kavárny)</p>
+            <p>Enjoy freshly brewed coffee in the city center with a nice view.</p>
+            <p>Best reserved:</p>
+            <p>2:30 PM-4:30 PM</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/prague-food4.webp" alt="Prague Food">
+          <div class="card-text">
+            <h4>Global Flavors</h4>
+            <p>(Chutě světa)</p>
+            <p>Authentic flavors to choose from different parts of the world.</p>
+            <p>Best reserved:</p>
+            <p>6:00 PM-8:00 PM</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/prague-food3.webp" alt="Prague Food">
+          <div class="card-text">
+            <h4>Cocktails &amp; Bars</h4>
+            <p>(Koktejly a bary)</p>
+            <p>Hang out at lively local bars, sample and savor a variety of drinks</p>
+            <p>Best reserved:</p>
+            <p>9:00 PM-10:00 PM</p>
+          </div>
+        </article>
+      </div>
+      <div class="panel" id="entertainment">
+        <article class="card">
+          <img src="images/prague-street.webp" alt="Prague Street Performance">
+          <div class="card-text">
+            <h4>Street Performance</h4>
+            <p>(Pouliční vystoupení)</p>
+            <p>Musicians, performers and artists gather on the streets for entertainment.</p>
+            <p>When to go:</p>
+            <p>2:00 PM-9:00 PM</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/prague-theater.webp" alt="Theatre play">
+          <div class="card-text">
+            <h4>Theater &amp; Art</h4>
+            <p>(Divadlo a umění)</p>
+            <p>Experience art in Prague's historic halls and modern stages.</p>
+            <p>When to go:</p>
+            <p>6:00 PM-9:00 PM</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/prague-riverboats.webp" alt="Boats docked on Vltava river">
+          <div class="card-text">
+            <h4>Vltava Riverboats</h4>
+            <p>(Lodě na Vltavě)</p>
+            <p>See the city from water, it is the most beautiful in the morning or at dusk</p>
+            <p>When to go:</p>
+            <p>11:00 AM or 7:00 PM</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/prague-music.webp" alt="Live music concert">
+          <div class="card-text">
+            <h4>Live Music</h4>
+            <p>(Živá hudba)</p>
+            <p>Festivals and concerts to enjoy, Prague music scene runs past midnight.</p>
+            <p>When to go:</p>
+            <p>After 9:00 PM</p>
+          </div>
+        </article>
+      </div>
   </div>
 </section>
 <!--footer-->
