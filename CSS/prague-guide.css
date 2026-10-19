@@ -222,6 +222,14 @@ article h4{
   font-size:1rem;
 }
 
+.budget-wrapper ul{
+  padding:20px;
+  line-height: 3;
+}
+
+.budget-wrapper p:nth-child(3) {
+  font-weight: bold;
+}
 @media (max-width: 1000px) {
   .hero {
     flex-direction: column;
@@ -315,5 +323,9 @@ article h4{
   .tab{
     font-size:12px;
     white-space: wrap;
+  }
+
+  .budget-wrapper ul {
+    line-height: 2;
   }
 }
