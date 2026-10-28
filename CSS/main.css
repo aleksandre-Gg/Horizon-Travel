@@ -122,6 +122,44 @@ section p {
   font-size: clamp(1rem, calc(0.167rem + 1.111vw), 1.5rem);
   line-height:1.5;
 }
+
+.CTA {
+  text-align:center;
+}
+
+.CTA p {
+  padding: 1rem 0;
+  font-size: clamp(1rem, calc(0.833rem + 0.556vw), 1.5rem);
+}
+.cta-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+}
+.cta-buttons a{
+  width: fit-content;
+  height:auto;
+  margin:20px 0;
+  background-color: rgb(19, 20, 59);
+  border: 1px solid rgb(121, 156, 217, 0.8);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: clamp(1.000rem, calc(0.167rem + 1.111vw), 1.500rem);
+}
+
+.cta-buttons a:first-child:hover {
+  background-color: rgb(121, 156, 217);
+}
+
+a.second-button {
+  background:none;
+  border: 1px solid white;
+}
 /*content reveal*/
 .reveal {
   opacity: 0;
@@ -350,6 +388,16 @@ section p {
     font-size:1.25rem;
   }
   
+  .cta-buttons {
+    flex-direction: column; 
+    width: 100%;
+    gap:0;
+  }
+
+  .cta-buttons a {
+    width: 100%;
+  }
+
   .footer-links{
     font-size: 1rem;
   }
