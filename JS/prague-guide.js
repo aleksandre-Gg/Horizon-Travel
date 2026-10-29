@@ -1,8 +1,8 @@
 const tabs = document.querySelectorAll('.tab'); //buttons
 const panels = document.querySelectorAll('.panel'); //panels, content
-
 const track = document.querySelector('.track');
 const gallery = document.querySelector('.gallery-wrapper');
+
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -20,6 +20,7 @@ if (track) { //if track exists
   const slides = gallery.querySelectorAll('.slides');
   const previousArrow = gallery.querySelector('.arrow-previous');
   const nextArrow = gallery.querySelector('.arrow-next');
+  const dots = document.querySelectorAll(".dot");
 
   let currentIndex = 0;
   let startX = 0;
@@ -29,13 +30,29 @@ if (track) { //if track exists
     currentIndex = Math.min(Math.max(index, 0), slides.length - 1);
     track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-    previousArrow.disabled = currentIndex === 0; //prev arrow disabled for first slide
-    nextArrow.disabled = currentIndex === slides.length - 1; //next arrow disabled for last slide
+    if (previousArrow) { //if arrows exist
+      previousArrow.disabled = currentIndex === 0;
+    }
+    if (nextArrow) {
+      nextArrow.disabled = currentIndex === slides.length - 1;
+    }
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
   };
 
-  previousArrow.addEventListener('click', () => goToSlide(currentIndex - 1));
-  nextArrow.addEventListener('click', () => goToSlide(currentIndex + 1));
-
+  if (previousArrow) {
+    previousArrow.addEventListener('click', () => goToSlide(currentIndex - 1));
+  }
+  if (nextArrow) {
+    nextArrow.addEventListener('click', () => goToSlide(currentIndex + 1));
+  }
+  
+  dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+  goToSlide(i);
+  });
+  });
   const swipeFinger = () => {
     const distance = startX - endX; //distance measure how far finger moved horizontally
     const threshold = 50; //50 px threshold 
