@@ -175,7 +175,7 @@ a.second-button {
 /*footer*/
 .footer {
   background-color: rgba(23, 24, 51, 1);
-  min-height: 320px;
+  min-height: fit-content;
   padding: 30px 20px;
 }
 
