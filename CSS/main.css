@@ -206,19 +206,15 @@ a.second-button {
   height:auto;
 }
 
-.footer h4, h5 {
-  font-size:20px;
-}
-
 .footer h4 {
   font-family:'Roboto Slab';
+  font-size:1.25rem;
 }
 
 .footer-brand p {
   color: rgb(161, 182, 218);
   padding-left:20px;
   padding-top:20px;
-  font-size:16px;
 }
 
 .footer-links {
@@ -231,10 +227,13 @@ a.second-button {
   margin:0;
 }
 
+.footer-links p {
+  font-weight: bold;
+}
 .footer-links div {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 5px;
 }
 
 .footer-links a {
@@ -367,16 +366,10 @@ a.second-button {
     width:30px;
     height:auto;
   }
-  h1 {
-    font-size: 2.25rem;
-  }
-  h2 {
-    font-size: 1.75rem;
-  }
 
-  p {
-    font-size: 1rem;
-  }
+  h1 {font-size: 2.25rem;}
+  h2 {font-size: 1.75rem;}
+  p {font-size: 1rem;}
 
   section h2 {
     font-size:2rem;
@@ -400,8 +393,12 @@ a.second-button {
 
   .footer-links{
     font-size: 1rem;
+    padding-top:2rem;
   }
-   
+  
+  .footer h4 {
+    font-size:1rem;
+  }
   .socials{
     width:25px;
     height: 25px;
@@ -423,13 +420,8 @@ a.second-button {
     font-size:12px;
   }
 
-  .footer-links h4{
-    font-size:1rem;
-  }
-
-  .footer-brand p{
-    font-size:12px;
-  }
+  .footer-links h4{font-size: 1rem;}
+  .footer-brand p{font-size: 12px;}
 
   section h2 {
     font-size:1.5rem;

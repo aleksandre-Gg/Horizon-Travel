@@ -16,7 +16,7 @@
   height: 100%;
   object-fit: cover; 
   filter: blur(2px);
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 h1 {
@@ -38,12 +38,11 @@ h2 {
   z-index: 1;
 }
 
-/*story*/
 section h2 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
+/*story*/
 .story-section {
   margin:2rem;
 }
@@ -78,8 +77,7 @@ img.mission-1,
 img.mission-2{
   display: block;
   object-fit: cover;
-  flex-grow:1;
-  flex-shrink: 0;
+  flex: 1 1 450px;
   width:500px;
   height: clamp(350px, calc(183.333px + 13.889vw), 450px);
   border-radius: 10px;
@@ -146,36 +144,18 @@ img.mission-2{
   max-width: 280px;
   min-height: 280px;
   gap: 1rem;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .group:hover{
   background-color: rgba(43, 47, 168, 0.411);
-  transition: 0.5s ease, color 0.5s ease;;
+  transition: 0.5s ease;
 }
 
 .group img{
   width:50px;
   height: 50px;
 }
-
-/*cta*/
-.cta-text{
-  color:white;
-  text-align: center;
-  font-size: 1.8rem;
-  font-family:'Roboto slab';
-  font-weight: bold;
-  margin-bottom:2rem;
-}
-
-.cta-text a{
-  color:white;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 1px;
-}
-
 /*animations section*/
 .animate-up {
   opacity: 0;
@@ -216,6 +196,10 @@ img.mission-2{
     margin:0;
     padding:0;
   }
+
+  .story-p p{
+    text-align: left;
+  }
   .mission-section,
   .mission-section2 {
     justify-content: center; 
@@ -239,11 +223,6 @@ img.mission-2{
     margin:0;
     padding:0;
   }
-  
-  .cta-text{
-    font-size:1rem;
-  }
-
   .group h3{
     font-size:1.25rem;
   }

@@ -25,8 +25,7 @@
   font-weight:300;
   padding: 5px 0;
   margin: 5px 0;
-  color:rgba(255, 255, 255, 0.8);
-    
+  color:rgba(255, 255, 255, 0.8); 
 }
 
 .box-container {
@@ -44,7 +43,6 @@ label span{
 }
 
 input[type="text"], [type="email"] {
-  display: grid;
   width: 100%;
   height:auto;
   background-color: transparent;  
@@ -149,7 +147,8 @@ textarea.over-limit {
   padding-bottom:5px;
 }
 
-.info-text p , a{
+.info-text p , 
+.info-text a{
   overflow-wrap: break-word;
   word-break: break-word;
   font-size: 15px;
@@ -190,7 +189,6 @@ textarea.over-limit {
     width: auto;
   } 
   
-  /*left side*/
   .text h1 {
     font-size: 28px;
   }
@@ -292,7 +290,6 @@ textarea.over-limit {
  }
 
  @media (max-width: 480px) {
-  /*left-side*/
   .text h1 {
     font-size:24px
   }

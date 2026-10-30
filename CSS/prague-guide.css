@@ -22,7 +22,7 @@ html {
   height: 100%;
   object-fit: cover; 
   filter: blur(2px);
-  opacity: 70%;
+  opacity: 0.6;
   z-index: 1;
 }
 
@@ -48,8 +48,6 @@ h3 {font-size: clamp(2rem, calc(0.333rem + 2.222vw), 3rem);}
   display: flex;
   height: fit-content;    
   flex-direction: column;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .cards-text{
@@ -225,7 +223,7 @@ article h4{
 }
 
 .text-box {
-  align-self: end;
+  align-self: start;
   max-width: 200px;
   margin-top:2rem;
 }

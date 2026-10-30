@@ -45,6 +45,7 @@
   border-radius: 100%;
   border-style: none;
   background-color:rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
 .dot.active {
@@ -137,7 +138,7 @@ section p{
 
 img.location-icon {
   width: clamp(24px, calc(10.667px + 1.111vw), 32px);
-  height: clamp(24px, calc(10.667px + 1.111vh), 32px);
+  height: clamp(24px, calc(10.667px + 1.111vw), 32px);
   border:none;
 }
 
@@ -237,13 +238,8 @@ img.event-img {
 }
 
 /*hotels*/
-.price {
-  color: rgb(86, 193, 116);
-}
-
-.review {
-  color: rgb(255, 216, 109);
-}
+.price {color: rgb(86, 193, 116);}
+.review {color: rgb(255, 216, 109);}
 
 .gap {
   gap: 10px;
@@ -254,26 +250,16 @@ img.event-img {
   margin:15px 0;
 }
 
-.card-margin {
-  margin-top: auto;
-}
-/*houses*/
-.houses {
-  margin-top: 0;
-}
+.card-margin {margin-top: auto;}
+.houses {margin-top: 0;}
 /*media*/
 @media (max-width: 1000px) {
   .hero {
     max-height:1200px;
   }
 
-  h1{
-    font-size:36px;
-  }
-
-  h2 {
-    font-size:1.25rem;
-  }
+  h1{font-size: 36px;}
+  h2 {font-size: 1.25rem;}
   
   section {
     margin-top: 2rem;
@@ -360,12 +346,8 @@ img.event-img {
   align-items: center;
   }
 
-  .text {
-    font-size: 1.25rem;
-  }
-  .text small {
-    font-size: 1rem;
-  }
+  .text {font-size: 1.25rem;}
+  .text small {font-size: 1rem;}
 
   .row {
     gap: 0;
