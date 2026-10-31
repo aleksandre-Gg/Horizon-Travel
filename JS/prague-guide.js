@@ -28,7 +28,7 @@ if (track) { //if track exists
 
   const goToSlide = (index) => {
     currentIndex = Math.min(Math.max(index, 0), slides.length - 1);
-    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    track.style.transform = `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 40}px))`; // n × 100% + n × 40px gap
 
     if (previousArrow) { //if arrows exist
       previousArrow.disabled = currentIndex === 0;
