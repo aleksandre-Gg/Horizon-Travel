@@ -6,6 +6,7 @@
   <title>Horizon Travel</title>
   <script src="JS/script.js" defer></script>
   <script src="JS/sample-resort.js" defer></script>
+  <script src="JS/sample-guide.js" defer></script>
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/sample-resort.css">
   <link rel="icon" href="icons/horizon-logo.svg">
@@ -31,25 +32,87 @@
     </nav>
  </header>
  <section class="resort">
-   <div class="heading reveal">
+  <div class="heading reveal">
     <h2>Isla Palms Resort</h2>
-    </div>  
+  </div>  
     <div class="resort-grid reveal">
-        <div class="main-item">
-            <img src="images/resort-lobby.webp" alt="Sunlit resort lobby" class="resort-image">
-        </div>
-        <div class ="image-item">
-            <img src="images/resort-bedroom.webp" alt="Relaxing bedroom showcase with ocean view" class="resort-image">
-        </div>
-        <div class="image-item">
-            <img src="images/resort-food.webp" alt="Freshly prepared meals" class="resort-image">
-        </div>
-        <div class="image-item">
-            <img src="images/resort-pool.webp" alt="Pool view with palm trees" class="resort-image">
-        </div>
-        <div class="image-item last-item">
-            <img src="images/resort-bathroom.webp" alt="Resort bathroom with modern amenities" class="resort-image">
-        </div>
+      <div class="main-item">
+        <img src="images/resort-lobby.webp" alt="Sunlit resort lobby" class="resort-image">
+      </div>
+      <div class ="image-item">
+        <img src="images/resort-bedroom.webp" alt="Relaxing bedroom showcase with ocean view" class="resort-image">
+      </div>
+      <div class="image-item">
+        <img src="images/resort-food.webp" alt="Freshly prepared meals" class="resort-image">
+      </div>
+      <div class="image-item">
+        <img src="images/resort-pool.webp" alt="Pool view with palm trees" class="resort-image">
+      </div>
+      <div class="image-item last-item">
+        <button class="open-modal" type="button">
+          <img src="images/resort-bathroom.webp" alt="Resort bathroom with modern amenities" class="resort-image">
+          <span class="overlay-text">View 10+ photos</span>
+        </button>
+        <dialog class="modal">
+            <div class="gallery-wrapper">
+              <button class="close-modal" type="button">&times;</button>
+              <div class="track">
+              <!--slide 1-->
+              <div class="slides">
+                <img src="images/resort-outside.webp" alt="Resort umbrella and chairs with pool">
+                <span class="gallery-count">1 / 10</span>
+              </div>
+              <!--slide 2-->
+              <div class="slides">
+                <img src="images/resort-lobby2.webp" alt="Fancy resort lobby and reception area">
+                <span class="gallery-count">2 / 10</span>
+              </div>
+              <!--slide 3-->
+              <div class="slides">
+                <img src="images/resort-bedroom2.webp" alt="Bedroom with bed and TV on wall">
+                <span class="gallery-count">3 / 10</span>
+              </div>
+              <!--slide 4-->
+              <div class="slides">
+                <img src="images/resort-aerial.webp" alt="Aerial view of the beach near the resort">
+                <span class="gallery-count">4 / 10</span>
+              </div>
+              <!--slide 5-->
+              <div class="slides">
+                <img src="images/resort-dining.webp" alt="Dining area with tables and chairs">
+                <span class="gallery-count">5 / 10</span>
+              </div>
+              <!--slide 6-->
+              <div class="slides">
+                <img src="images/resort-kitchen-area.webp" alt="Kitchen area with modern appliances">
+                <span class="gallery-count">6 / 10</span>
+              </div>
+              <!--slide 7-->
+              <div class="slides">
+                <img src="images/resort-desserts.webp" alt="Delicious desserts on a wooden table">
+                <span class="gallery-count">7 / 10</span>
+              </div>
+              <!--slide 8-->
+              <div class="slides">
+                <img src="images/resort-gym.webp" alt="Well-equipped gym">
+                <span class="gallery-count">8 / 10</span>
+              </div>
+              <!--slide 9-->
+              <div class="slides">
+                <img src="images/resort-outside2.webp" alt="Beach chairs from the back with ocean in the background">
+                <span class="gallery-count">9 / 10</span>
+              </div>
+              <!--slide 10-->
+              <div class="slides">
+                <img src="images/resort-hammock.webp" alt="Hammock view with ocean backdrop">
+                <span class="gallery-count">10 / 10</span>
+              </div>
+            </div>
+            <button class="arrow-previous">&lsaquo;</button>
+            <button class="arrow-next">&rsaquo;</button>
+          </div>
+        </dialog>
+      </div>
     </div>
  </section>
  <!--footer-->
