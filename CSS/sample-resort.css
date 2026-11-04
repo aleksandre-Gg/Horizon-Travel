@@ -83,7 +83,8 @@ body:has(dialog[open]) {
   overflow: hidden; 
   container-type: inline-size; /*cqw, 1 cqw = 1% of container width*/
   width: min(92vw, clamp(400px, calc(-133.333px + 69.444vw), 1200px));
-  height: auto; aspect-ratio: 2 / 1;
+  height: auto; 
+  aspect-ratio: 2 / 1;
   border-radius: 10px;
 }
 
@@ -160,16 +161,14 @@ body:has(dialog[open]) {
 .resort-description {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  margin: 2rem 0;
   line-height: 2;
   font-weight: 300;
-  margin-top: 1rem;
-  gap:4rem;
+  gap:3rem;
 }
 
-.resort-description ul span {
-  font-weight: bold;
-}
+.resort-description ul {padding: 0 1rem;}
+.resort-description ul span {font-weight: bold;}
 
 .amenities {
   display: flex;
@@ -188,15 +187,38 @@ svg {
   align-items: center;
   gap:0.5rem;
 }
-@media (max-width: 768px) {
-  .open-modal {
-    pointer-events: none; /*fix later*/
+
+@media (max-width: 1100px) {
+  .resort-description {
+    flex-direction: column-reverse; /*so amenities stay on top*/
+    gap: 2rem;
   }
 
   .amenities {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2rem;
   }
 } 
+
+@media (max-width: 768px) {
+  .resort-grid {
+    grid-template-columns: 1fr 1fr;
+    aspect-ratio: auto;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .amenities {
+    gap: 1rem;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+
+  svg {
+    width:20px;
+    height:20px;
+  }
+}
