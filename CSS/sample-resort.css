@@ -160,9 +160,10 @@ body:has(dialog[open]) {
 /*resort description*/
 .resort-description {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 2rem 0;
-  line-height: 2;
+  line-height: 3;
   font-weight: 300;
   gap:3rem;
 }
@@ -176,7 +177,7 @@ body:has(dialog[open]) {
   font-weight: bold;
 }
 
-svg {
+.amenities svg {
   width:30px;
   height:30px;
 }
@@ -188,10 +189,16 @@ svg {
   gap:0.5rem;
 }
 
+.review-badge {
+  display:flex;
+  justify-content: flex-end;
+  margin-top:2rem;
+}
 @media (max-width: 1100px) {
   .resort-description {
     flex-direction: column-reverse; /*so amenities stay on top*/
     gap: 2rem;
+    line-height: 2;
   }
 
   .amenities {
@@ -199,6 +206,10 @@ svg {
     flex-direction: row;
     justify-content: space-around;
     gap: 2rem;
+  }
+
+  .review-badge {
+    justify-content: flex-start;
   }
 } 
 
@@ -211,14 +222,23 @@ svg {
 }
 
 @media (max-width: 480px) {
-  .amenities {
+  .resort-description {
+    gap: 0;
+  }
+  .amenities { /*fix later*/
     gap: 1rem;
     font-size: 12px;
-    justify-content: space-between;
+    justify-content: space-between; 
   }
 
-  svg {
+  .amenities svg {
     width:20px;
     height:20px;
+  }
+
+  .review-badge {
+    width:80%;
+    height:80%;
+    margin-top:0;
   }
 }
