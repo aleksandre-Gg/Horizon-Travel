@@ -177,7 +177,8 @@ body:has(dialog[open]) {
   font-weight: bold;
 }
 
-.amenities svg {
+.amenities svg,
+.policy svg {
   width:30px;
   height:30px;
 }
@@ -195,19 +196,35 @@ body:has(dialog[open]) {
   margin-top:2rem;
 }
 
-.about h2 {
-  padding-bottom: 20px;
-  border-bottom: 2px solid gray;
-}
-.about p:last-of-type{
-  border-bottom: 2px solid gray;
-}
+.about h2 {padding-bottom: 20px;}
+.about p {padding: 10px 0;}
 
-.about p {
-  padding: 10px 0;
+/*property policies*/
+.policy-grid {
+  display:grid;
+  gap:2rem;
+  padding-top:40px;
 }
 
+.policy-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
 
+.policy-item {
+  display: flex;
+  align-items:center;
+  gap:1rem;
+  font-weight: bold;
+}
+
+.details {
+  color: rgba(255, 255, 255, 0.7)
+}
 @media (max-width: 1100px) {
   .resort-description {
     flex-direction: column-reverse; /*so amenities stay on top*/
