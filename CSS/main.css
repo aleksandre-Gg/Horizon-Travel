@@ -99,19 +99,16 @@ h2 {
 
 /*shared sections*/
 section {
-  margin-top: clamp(32px, calc(5.333px + 2.222vw), 48px);
   padding: clamp(40px, calc(6.667px + 2.778vw), 60px);
 }
 
 section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  font-family:'Roboto Slab';
-  letter-spacing: 3px;
 }
 
 section h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400; 
   margin: 2rem 0;
   color:rgb(252, 239, 192);
@@ -119,7 +116,7 @@ section h3 {
 
 section p {
   font-weight:300;
-  font-size: clamp(1rem, calc(0.167rem + 1.111vw), 1.5rem);
+  font-size: 1rem;
   line-height:1.5;
 }
 
