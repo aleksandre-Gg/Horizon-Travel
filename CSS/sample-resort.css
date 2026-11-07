@@ -170,7 +170,7 @@ body:has(dialog[open]) {
 
 .resort-description ul {padding: 0 1rem;}
 .resort-description ul span {font-weight: bold;}
-
+.resort {padding-bottom: 0;}
 .amenities {
   display: flex;
   gap: 3rem;
@@ -194,6 +194,20 @@ body:has(dialog[open]) {
   justify-content: flex-end;
   margin-top:2rem;
 }
+
+.about h2 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid gray;
+}
+.about p:last-of-type{
+  border-bottom: 2px solid gray;
+}
+
+.about p {
+  padding: 10px 0;
+}
+
+
 @media (max-width: 1100px) {
   .resort-description {
     flex-direction: column-reverse; /*so amenities stay on top*/
