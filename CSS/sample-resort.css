@@ -2,10 +2,8 @@ body:has(dialog[open]) {
   overflow: hidden;
 }
 
-.resort h2 {
-  text-align: center;
-}
-
+.resort h2 {text-align: center;}
+section h2:not(.resort h2, .about h2){padding-bottom: 40px;}
 /*resort image grid*/
 .resort-grid {
   display: grid;
@@ -203,7 +201,6 @@ body:has(dialog[open]) {
 .policy-grid {
   display:grid;
   gap:2rem;
-  padding-top:40px;
 }
 
 .policy-row {
@@ -225,6 +222,95 @@ body:has(dialog[open]) {
 .details {
   color: rgba(255, 255, 255, 0.7)
 }
+/*more like this*/
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(20px, calc(-10px + 2.5vw), 38px);
+}
+
+.card-grid img:not(.location-icon) {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-item {
+  position: relative;
+  overflow: hidden;
+  display: flex;        
+  flex-direction: column;
+  background:rgba(62, 62, 62, 0.426);
+  width: 100%;
+  border-radius: 10px;
+  border:0.8px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-item img:not(img.location-icon){transition: transform 0.4s ease;}
+.card-item img:hover:not(img.location-icon){transform: scale(1.1);}
+
+.card-text {
+  display: flex;         
+  flex-direction: column; 
+  flex: 1;
+  padding:20px; 
+  z-index: 2; 
+  flex-wrap: nowrap;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap:5px;
+}
+
+img.location-icon {
+  width: clamp(24px, calc(10.667px + 1.111vw), 32px);
+  height: clamp(24px, calc(10.667px + 1.111vw), 32px);
+  border:none;
+}
+
+.price {color: rgb(86, 193, 116);}
+.review {color: rgb(255, 216, 109);}
+
+.tags {
+  font-weight: bold;  
+  margin:15px 0;
+}
+
+
+.card-button{
+  width: fit-content;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  margin:20px;
+  background-color: rgb(19, 20, 59);
+  border: 1px solid rgb(121, 156, 217, 0.8);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  padding:10px;
+  margin-top: auto;
+}
+
+.card-button:hover {background-color: rgb(121, 156, 217, 0.8);}
+.card-margin {margin-top: auto;}
+
+a.card-button {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size:1rem;
+  white-space: nowrap;
+}
+.resort-bold {
+  font-weight: bold;
+  padding-bottom:10px;
+}
 @media (max-width: 1100px) {
   .resort-description {
     flex-direction: column-reverse; /*so amenities stay on top*/
@@ -242,6 +328,10 @@ body:has(dialog[open]) {
   .review-badge {
     justify-content: flex-start;
   }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 } 
 
 @media (max-width: 768px) {
@@ -249,6 +339,11 @@ body:has(dialog[open]) {
     grid-template-columns: 1fr 1fr;
     aspect-ratio: auto;
     margin-top: 1.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap:40px;
   }
 }
 
